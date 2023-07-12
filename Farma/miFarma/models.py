@@ -24,5 +24,6 @@ class Medicamento(models.Model):
     codBarras = models.TextField()
     laboratorio = models.TextField()
 
+#cambio realizado
     
 
