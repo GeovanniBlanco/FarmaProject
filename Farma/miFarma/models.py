@@ -15,6 +15,7 @@ class Paciente(models.Model):
     direccion = models.TextField()
     telefono = models.IntegerField
 
+
 class Medicamento(models.Model):
     nombre = models.TextField()
     caducidad = models.DateField
