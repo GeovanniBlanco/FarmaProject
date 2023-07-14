@@ -14,12 +14,26 @@
 </head>
 <body>
     {% block login %}
+    <div id="contenedor">
+        <h1>Login Usuario</h1>
+        <form>
+            <label>Usuario<label/>
+            <input type="text" id="nombre"/>
+            <br>
+            <br>
+            <label>Contraseña<label/>
+            <input type="password" id="contraseña"/>  
+            <br>
+            <br>        
+            <input type="button" onclick="" value="aceptar"/>
+
+
+        </form>
+    </div>    
     {% endblock %}
    
     {% block formulario_login%}
-        <form>
-            <input>Usuario</input>
-        </form>    
+    
     {% endblock %}
 
     
