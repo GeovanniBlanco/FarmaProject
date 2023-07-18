@@ -1,2 +1,18 @@
 {% extends 'layout.html'%}
-{%block title%}Paciente{%endblock%}
+
+    {% block title %}
+            Pacientes
+    {% endblock %}
+
+{%block consultas%}
+    <div id="contenedor_consultas">
+        <br>
+        {{block.super}}
+        
+            <label>Medicamento<label/>
+            <input type="text" id="Medicamento"/><br>
+            
+
+    </div>
+
+{%endblock%}

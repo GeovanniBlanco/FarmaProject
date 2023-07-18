@@ -25,3 +25,25 @@ body{
     background-size: cover;
     opacity: 70%;
 }
+
+
+#contenedor_consultas{
+    /*centrar el bloque div*/
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    /*fin de centro del bloque*/
+
+    border-radius: 30px;
+    margin: 0  auto;
+    text-align: center;
+    height: 60%;
+    width: 70%;
+    background: rgb(249,249,251);
+    background: linear-gradient(90deg, rgba(249,249,251,1) 0%, rgba(0,212,255,1) 100%);
+}
+
+label{
+    font-size: 30px;
+}
