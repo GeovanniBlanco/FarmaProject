@@ -9,18 +9,14 @@ class Paciente(models.Model):
     Nombre = models.TextField()
     apellidoP = models.TextField()
     apellidoM = models.TextField()
-    fechaNac = models.DateField
-    edad = models.IntegerField
     sexo = models.TextField()
     direccion = models.TextField()
-    telefono = models.IntegerField
+ 
 
 
 class Medicamento(models.Model):
     nombre = models.TextField()
-    caducidad = models.DateField
     lote = models.TextField()
-    cantidad = models.IntegerField
     presentacion = models.TextField()
     codBarras = models.TextField()
     laboratorio = models.TextField()

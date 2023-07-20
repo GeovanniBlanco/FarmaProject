@@ -23,5 +23,7 @@ urlpatterns = [
     path('', views.home, name = 'home'),
     path('farmacia/', views.farmacia, name = 'farmacia'),
     path('paciente/',views.paciente, name='paciente'),
+    path('paciente_creado/', views.crear_paciente, name='crear_paciente'),
+
 
 ]
