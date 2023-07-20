@@ -18,19 +18,21 @@ def farmacia(request):
 def paciente(request):
     return render(request,'paciente.html')
 
-
+#___________________________________________________________________________________________________________________#
 #vista creada para guardar datos dentro del modelo, hay que crear la URL para que arroje el mensaje
 def crear_paciente(request):
     cpaciente = Paciente(
         numPaciente = '3', #en cada ejemplo se agrega el valor de manera manual
-        Nombre = 'Jose',
-        apellidoP = '',
-        apellidoM = 'Blanco',
-        sexo = 'Masculino',
-        direccion = 'Santiago Tepatlaxco',
+        Nombre = 'Jose', #en cada ejemplo se agrega el valor de manera manual
+        apellidoP = '', #en cada ejemplo se agrega el valor de manera manual
+        apellidoM = 'Blanco', #en cada ejemplo se agrega el valor de manera manual
+        sexo = 'Masculino', #en cada ejemplo se agrega el valor de manera manual
+        direccion = 'Santiago Tepatlaxco', #en cada ejemplo se agrega el valor de manera manual
         
     )
 
     cpaciente.save()
     
     return HttpResponse("Paciente creado: ")
+
+#_____________________________________________________________________________________________________________________#
