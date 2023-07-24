@@ -33,6 +33,6 @@ def crear_paciente(request):
 
     cpaciente.save()
     
-    return HttpResponse("Paciente creado: ")
+    return HttpResponse(f"Paciente creado: {cpaciente.Nombre} - {cpaciente.apellidoP}")
 
 #_____________________________________________________________________________________________________________________#
