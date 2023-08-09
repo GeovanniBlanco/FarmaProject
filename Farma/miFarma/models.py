@@ -22,5 +22,9 @@ class Medicamento(models.Model):
     laboratorio = models.TextField()
 
 #cambio realizado
-    
+class usuarios(models.Model):
+    usuario = models.TextField()
+    contraseña = models.TextField()
+    rol = models.TextField()
+
 

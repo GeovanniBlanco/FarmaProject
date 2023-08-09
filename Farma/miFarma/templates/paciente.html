@@ -4,15 +4,36 @@
             Pacientes
     {% endblock %}
 
-{%block consultas%}
-    <div id="contenedor_consultas">
-        <br>
-        {{block.super}}
-        
-            <label>Medicamento<label/>
-            <input type="text" id="Medicamento"/><br>
-            
 
+   
+{%block consultas%}
+
+    <div id="contenedor">
+        <div id="formulario">  
+            <br>
+     
+            <form action="{% url 'paciente_creado' %}" method ="GET"> 
+                <label for='titulo'> Crear pacientes<label/>
+                <br>
+                <input type = "text" name ="numPaciente" placeholder = "Ingresa el numero de paciente"/>
+                <br>
+                <input type = "text" name ="Nombre" placeholder = "Ingresa el nombre"/>
+                <br>
+                <input type = "text" name ="apellidoP" placeholder = "Ingresa el apellido paterno"/>
+                <br>
+                <input type = "text" name ="apellidoM" placeholder = "Ingresa el apellido materno"/>
+                <br>
+                <input type = "text" name ="sexo" placeholder = "Ingresa el sexo"/>
+                <br>
+                <input type = "text" name ="direccion" placeholder = "Ingresa la direccion"/>    
+                <br>
+                <input type = "submit" value="guardar" /> 
+            </form>
+        </div>
     </div>
 
+
 {%endblock%}
+
+
+
